@@ -1,1 +1,0 @@
-# shingoooooon.github.io
