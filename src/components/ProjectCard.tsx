@@ -47,20 +47,29 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     {/* Image Carousel */}
                     <div className="relative">
                         <div className="relative overflow-hidden rounded-lg">
-                            <Image
-                                src={`/images/${project.images[currentImageIndex]}`}
-                                alt={`${project.title} screenshot ${currentImageIndex + 1}`}
-                                width={600}
-                                height={400}
-                                className="w-full h-auto"
-                            />
+                            <div
+                                className="flex transition-transform duration-500 ease-in-out"
+                                style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+                            >
+                                {project.images.map((image, index) => (
+                                    <div key={index} className="w-full flex-shrink-0">
+                                        <Image
+                                            src={`/images/${image}`}
+                                            alt={`${project.title} screenshot ${index + 1}`}
+                                            width={600}
+                                            height={400}
+                                            className="w-full h-auto"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
 
                             {/* Navigation arrows */}
                             {project.images.length > 1 && (
                                 <>
                                     <button
                                         onClick={prevImage}
-                                        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all"
+                                        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all hover:scale-110"
                                     >
                                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -68,7 +77,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                     </button>
                                     <button
                                         onClick={nextImage}
-                                        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all"
+                                        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all hover:scale-110"
                                     >
                                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -85,7 +94,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                     <button
                                         key={index}
                                         onClick={() => setCurrentImageIndex(index)}
-                                        className={`w-3 h-3 rounded-full transition-all ${index === currentImageIndex ? 'bg-[#74FAC0]' : 'bg-gray-500'
+                                        className={`w-3 h-3 rounded-full transition-all ${index === currentImageIndex
+                                            ? 'bg-[#74FAC0]'
+                                            : 'bg-gray-500 hover:bg-gray-400'
                                             }`}
                                     />
                                 ))}
@@ -121,7 +132,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                     rel="noopener noreferrer"
                                     className="border-2 border-white text-white px-6 py-3 hover:bg-[#74FAC0] hover:text-[#2F324A] transition-all duration-500"
                                 >
-                                    View Site
+                                    Demo
                                 </a>
                             )}
                             {project.githubUrl && (
@@ -131,7 +142,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                     rel="noopener noreferrer"
                                     className="border-2 border-white text-white px-6 py-3 hover:bg-[#74FAC0] hover:text-[#2F324A] transition-all duration-500"
                                 >
-                                    View Code
+                                    Github
                                 </a>
                             )}
                             {project.githubApiUrl && (
