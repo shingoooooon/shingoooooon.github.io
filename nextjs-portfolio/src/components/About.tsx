@@ -40,6 +40,19 @@ export default function About() {
                                 </div>
                             </div>
                         </div>
+                        <div className="mt-12">
+                            <h3 className="text-2xl font-bold mb-6 text-[#74fac0]">Languages</h3>
+                            <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
+                                <div className="bg-[#3a3d5a] p-4 rounded-lg">
+                                    <h4 className="font-semibold mb-2">Japanese</h4>
+                                    <p className="text-sm text-gray-300">Native</p>
+                                </div>
+                                <div className="bg-[#3a3d5a] p-4 rounded-lg">
+                                    <h4 className="font-semibold mb-2">English</h4>
+                                    <p className="text-sm text-gray-300">Professional</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

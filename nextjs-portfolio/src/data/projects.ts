@@ -102,10 +102,5 @@ export const socialLinks: SocialLink[] = [
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/shingokubomura/',
         icon: 'fab fa-linkedin'
-    },
-    {
-        name: 'Instagram',
-        url: 'https://www.instagram.com/shingoooooon/',
-        icon: 'fab fa-instagram'
     }
 ];
