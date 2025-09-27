@@ -128,4 +128,3 @@ This project is open source and available under the [MIT License](LICENSE).
 - **Role**: Full-Stack Developer
 - **GitHub**: [@shingoooooon](https://github.com/shingoooooon)
 - **LinkedIn**: [shingokubomura](https://www.linkedin.com/in/shingokubomura/)
-- **Instagram**: [@shingoooooon](https://www.instagram.com/shingoooooon/)
