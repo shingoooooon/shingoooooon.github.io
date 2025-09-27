@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #2f324a !important;
+  font-family: "Oswald", sans-serif !important;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-padding-top: 4rem; /* Account for fixed header */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2f324a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #74fac0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5dd4a3;
+}
