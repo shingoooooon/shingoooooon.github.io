@@ -3,6 +3,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Project } from '@/types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 interface ProjectCardProps {
     project: Project;
@@ -133,6 +136,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                     className="border-2 border-white text-white px-6 py-3 hover:bg-[#74FAC0] hover:text-[#2F324A] transition-all duration-500"
                                 >
                                     Demo
+                                    <FontAwesomeIcon icon={faLink} className='ml-1' />
                                 </a>
                             )}
                             {project.githubUrl && (
@@ -143,6 +147,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                     className="border-2 border-white text-white px-6 py-3 hover:bg-[#74FAC0] hover:text-[#2F324A] transition-all duration-500"
                                 >
                                     Github
+                                    <FontAwesomeIcon icon={faGithub} className='ml-1' />
                                 </a>
                             )}
                             {project.githubApiUrl && (
