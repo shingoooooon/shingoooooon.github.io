@@ -31,15 +31,15 @@ export const projects: Project[] = [
         githubApiUrl: 'https://github.com/shingoooooon/pokemon-store-api',
         githubWebUrl: 'https://github.com/shingoooooon/pokemon-store-web'
     },
-    {
-        id: 'react-gif-searcher',
-        title: 'React-Gif-Seacher',
-        role: 'Front End Developer',
-        description: 'React-Gif-Seacher is a React app that lets you search for Gifs from GIPHY API.',
-        technologies: ['HTML5', 'CSS3', 'React'],
-        images: ['React-Gif-Seacher.jpg', 'React-Gif-Seacher2.jpg'],
-        githubUrl: 'https://github.com/shingoooooon/React-Gif-Seacher'
-    },
+    //{
+    //    id: 'react-gif-searcher',
+    //    title: 'React-Gif-Seacher',
+    //    role: 'Front End Developer',
+    //    description: 'React-Gif-Seacher is a React app that lets you search for Gifs from GIPHY API.',
+    //    technologies: ['HTML5', 'CSS3', 'React'],
+    //    images: ['React-Gif-Seacher.jpg', 'React-Gif-Seacher2.jpg'],
+    //    githubUrl: 'https://github.com/shingoooooon/React-Gif-Seacher'
+    //},
     // {
     //    id: 'nurture',
     //    title: 'Nurture',
