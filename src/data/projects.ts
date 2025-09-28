@@ -4,7 +4,6 @@ export const projects: Project[] = [
     {
         id: 'e-book-commerce',
         title: 'e-Book Commerce',
-        role: 'Full Stack Developer',
         description: 'e-Book Commerce is a modern platform for digital books and articles built with Next.js 15 and TypeScript. It integrates Stripe for payments, Supabase for data management, and microCMS for article content. Deployed on Vercel\'s edge network.',
         technologies: ['TypeScript', 'Next.js', 'Stripe', 'Supabase', 'Vercel'],
         images: ['ebookcommerce.png', 'ebookcommerce2.png', 'ebookcommerce3.png'],
@@ -14,7 +13,6 @@ export const projects: Project[] = [
     {
         id: 'pinia-task-manager',
         title: 'Pinia task manager',
-        role: 'Full Stack Developer',
         description: 'Pinia Task Manager is a task management application built with Vue 3 and Pinia. It utilizes Vite for a fast development environment. The project is deployed on Vercel and integrates Firebase for backend services.',
         technologies: ['TypeScript', 'Vue.js', 'Firebase', 'Vite', 'Vercel'],
         images: ['piniataskmanager.png'],
@@ -24,7 +22,6 @@ export const projects: Project[] = [
     {
         id: 'pokemon-store',
         title: 'Pokémon Store',
-        role: 'Full Stack Developer',
         description: 'Pokemon Store is a shopping cart application to buy Pokémon using Node.js/NestJS and Vue3/Nuxt3.',
         technologies: ['TypeScript', 'Vue.js', 'Nuxt.js', 'Node.js', 'NestJS'],
         images: ['pokemon1.jpg', 'pokemon2.jpg', 'pokemon3.jpg'],

@@ -110,7 +110,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     {/* Project Info */}
                     <div className="space-y-6">
                         <h2 className="text-3xl lg:text-4xl font-bold">{project.title}</h2>
-                        <p className="text-[#74FAC0] text-lg">{project.role}</p>
                         <p className="text-gray-300 leading-relaxed">{project.description}</p>
 
                         {/* Technology Icons */}
