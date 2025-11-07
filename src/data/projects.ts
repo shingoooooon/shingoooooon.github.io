@@ -2,6 +2,15 @@ import { Project, SocialLink } from '@/types';
 
 export const projects: Project[] = [
     {
+        id: 'omoide',
+        title: 'Omoide',
+        description: 'Omoide is an AI-powered child growth tracking application that transforms everyday photos into beautiful storybooks. Built with Next.js 15 and React 19, it integrates Firebase for authentication and storage, OpenAI for story generation, and Google Cloud services for image analysis and text-to-speech. Deployed on Vercel with Turbopack for optimal performance.',
+        technologies: ['TypeScript', 'React', 'Next.js', 'Firebase', 'OpenAI', 'Google Cloud Vision', 'Google Cloud TTS', 'Tailwind CSS', 'Vercel'],
+        images: ['omoide1.png', 'omoide2.png', 'omoide3.png', 'omoide4.png'],
+        liveUrl: 'https://omoide-app.vercel.app/',
+        githubUrl: 'https://github.com/shingoooooon/omoide'
+    },
+    {
         id: 'e-book-commerce',
         title: 'e-Book Commerce',
         description: 'e-Book Commerce is a modern platform for digital books and articles built with Next.js 15 and TypeScript. It integrates Stripe for payments, Supabase for data management, and microCMS for article content. Deployed on Vercel\'s edge network.',
