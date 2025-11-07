@@ -29,7 +29,11 @@ const technologyIcons: { [key: string]: string } = {
     'JavaScript': 'fab fa-js-square',
     'Ruby': 'ruby-icon',
     'PostgreSQL': 'postgresql-icon',
-    'Figma': 'figma-icon'
+    'Figma': 'figma-icon',
+    'OpenAI': 'devicon-openai-plain',
+    'Google Cloud Vision': 'devicon-googlecloud-plain',
+    'Google Cloud TTS': 'devicon-googlecloud-plain',
+    'Tailwind CSS': 'devicon-tailwindcss-plain'
 };
 
 export default function ProjectCard({ project }: ProjectCardProps) {
