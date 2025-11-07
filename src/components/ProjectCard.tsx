@@ -53,19 +53,18 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     {/* Image Carousel */}
                     <div className="relative">
-                        <div className="relative overflow-hidden rounded-lg">
+                        <div className="relative overflow-hidden rounded-lg aspect-video">
                             <div
-                                className="flex transition-transform duration-500 ease-in-out"
+                                className="flex transition-transform duration-500 ease-in-out h-full"
                                 style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
                             >
                                 {project.images.map((image, index) => (
-                                    <div key={index} className="w-full flex-shrink-0">
+                                    <div key={index} className="w-full flex-shrink-0 h-full relative">
                                         <Image
                                             src={`/images/${image}`}
                                             alt={`${project.title} screenshot ${index + 1}`}
-                                            width={600}
-                                            height={400}
-                                            className="w-full h-auto"
+                                            fill
+                                            className="object-cover"
                                         />
                                     </div>
                                 ))}
