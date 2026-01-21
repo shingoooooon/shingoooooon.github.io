@@ -2,6 +2,16 @@ import { Project, SocialLink } from '@/types';
 
 export const projects: Project[] = [
     {
+        id: 'simple-post-manager',
+        title: 'Simple post manager',
+        description: 'Omoide is an AI-powered child growth tracking application that transforms everyday photos into beautiful storybooks. Built with Next.js 15 and React 19, it integrates Firebase for authentication and storage, OpenAI for story generation, and Google Cloud services for image analysis and text-to-speech. Deployed on Vercel with Turbopack for optimal performance.',
+        technologies: ['TypeScript', 'Vue.js', 'Node.js', 'Express', 'AWS'],
+        images: ['simplepostmanager.png'],
+        liveUrl: 'http://simple-post-management.s3-website-ap-southeast-2.amazonaws.com/',
+        githubApiUrl: 'https://github.com/shingoooooon/simple-post-manager-api',
+        githubWebUrl: 'https://github.com/shingoooooon/simple-post-manager-web'
+    },
+    {
         id: 'omoide',
         title: 'Omoide',
         description: 'Omoide is an AI-powered child growth tracking application that transforms everyday photos into beautiful storybooks. Built with Next.js 15 and React 19, it integrates Firebase for authentication and storage, OpenAI for story generation, and Google Cloud services for image analysis and text-to-speech. Deployed on Vercel with Turbopack for optimal performance.',

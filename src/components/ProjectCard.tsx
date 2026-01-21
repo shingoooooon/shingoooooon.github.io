@@ -30,10 +30,12 @@ const technologyIcons: { [key: string]: string } = {
     'Ruby': 'ruby-icon',
     'PostgreSQL': 'postgresql-icon',
     'Figma': 'figma-icon',
-    'OpenAI': 'devicon-openai-plain',
+    'OpenAI': 'fas fa-brain',
     'Google Cloud Vision': 'devicon-googlecloud-plain',
     'Google Cloud TTS': 'devicon-googlecloud-plain',
-    'Tailwind CSS': 'devicon-tailwindcss-plain'
+    'Tailwind CSS': 'devicon-tailwindcss-plain',
+    'Express': 'devicon-express-original',
+    'AWS': 'devicon-amazonwebservices-plain'
 };
 
 export default function ProjectCard({ project }: ProjectCardProps) {
