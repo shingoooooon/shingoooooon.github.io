@@ -4,7 +4,7 @@ export const projects: Project[] = [
     {
         id: 'simple-post-manager',
         title: 'Simple post manager',
-        description: 'Omoide is an AI-powered child growth tracking application that transforms everyday photos into beautiful storybooks. Built with Next.js 15 and React 19, it integrates Firebase for authentication and storage, OpenAI for story generation, and Google Cloud services for image analysis and text-to-speech. Deployed on Vercel with Turbopack for optimal performance.',
+        description:  'Simple Post Manager is a full-stack web application built to practice Vue.js, Node.js, and AWS deployment. The frontend is developed with Vue.js and TypeScript, hosted on AWS S3 using Static Website Hosting. The backend API is built with Express and Node.js, deployed on AWS EC2. This project demonstrates cloud infrastructure setup, RESTful API design, and modern frontend development practices.',
         technologies: ['TypeScript', 'Vue.js', 'Node.js', 'Express', 'AWS'],
         images: ['simplepostmanager.png'],
         liveUrl: 'http://simple-post-management.s3-website-ap-southeast-2.amazonaws.com/',
